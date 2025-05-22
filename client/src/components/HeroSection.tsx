@@ -6,7 +6,7 @@ import FadeInElement from './FadeInElement';
 import TechPatternSVG from '@/assets/TechPatternSVG';
 import { useEffect, useState } from 'react';
 // Import the professional headshot
-import headshot from '../assets/images/Sai Deeduvanu.png';
+import headshot from '../assets/images/headshot.png';
 
 // Dynamic animated text with gradient
 const AnimatedTitle = () => {
@@ -146,6 +146,7 @@ export default function HeroSection() {
               src={headshot} 
               alt="Sai Deeduvanu" 
               className="relative z-10 w-64 h-64 md:w-80 md:h-80 object-cover rounded-full border-4 border-white dark:border-gray-800 shadow-xl" 
+              style={{ objectPosition: "center top" }}
             />
           </div>
         </FadeInElement>

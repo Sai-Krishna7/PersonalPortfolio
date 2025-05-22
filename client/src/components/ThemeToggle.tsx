@@ -1,29 +1,32 @@
-import { useTheme } from "./ThemeProvider";
 import { Button } from "@/components/ui/button";
 import { Moon, Sun } from "lucide-react";
 import { motion } from "framer-motion";
 import { useEffect, useState } from "react";
 
 export default function ThemeToggle() {
-  const { theme, setTheme } = useTheme();
-  // Track mounted state to avoid hydration issues
-  const [mounted, setMounted] = useState(false);
-
-  // After mounting, we can show the toggle safely
+  const [isDark, setIsDark] = useState(false);
+  
+  // On mount, check if the document already has dark class
   useEffect(() => {
-    setMounted(true);
+    const isDarkMode = document.documentElement.classList.contains('dark');
+    setIsDark(isDarkMode);
   }, []);
 
+  // Simple toggle function that directly manipulates class
   function toggleTheme() {
-    if (theme === 'dark') {
-      setTheme('light');
+    if (isDark) {
+      // Switch to light theme
+      document.documentElement.classList.remove('dark');
+      document.documentElement.classList.add('light');
+      localStorage.setItem('portfolio-ui-theme', 'light');
+      setIsDark(false);
     } else {
-      setTheme('dark');
+      // Switch to dark theme
+      document.documentElement.classList.remove('light');
+      document.documentElement.classList.add('dark');
+      localStorage.setItem('portfolio-ui-theme', 'dark');
+      setIsDark(true);
     }
-  }
-
-  if (!mounted) {
-    return null;
   }
 
   return (
@@ -41,7 +44,7 @@ export default function ThemeToggle() {
       >
         <span className="absolute inset-0 bg-gradient-to-tr from-blue-100 to-purple-100 dark:from-blue-900/20 dark:to-purple-900/20 opacity-50"></span>
         <span className="relative z-10">
-          {theme === 'dark' ? (
+          {isDark ? (
             <Sun className="h-5 w-5" />
           ) : (
             <Moon className="h-5 w-5" />
