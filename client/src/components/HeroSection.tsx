@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import { ArrowDown, Code, Cloud, Terminal } from 'lucide-react';
+import { ArrowDown, Code, Cloud, Terminal, Sparkles } from 'lucide-react';
 import { FaLinkedin, FaGithub, FaAws } from 'react-icons/fa';
 import { Button } from '@/components/ui/button';
 import FadeInElement from './FadeInElement';
@@ -24,9 +24,9 @@ const AnimatedTitle = () => {
 // Animated job title component with changing roles
 const AnimatedJobTitle = () => {
   const jobTitles = [
-    "Software Engineer",
+    "GenAI Software Engineer",
     "Cloud Engineer",
-    "AI Developer"
+    "Full-Stack Developer"
   ];
   
   const [currentTitleIndex, setCurrentTitleIndex] = useState(0);
@@ -40,7 +40,7 @@ const AnimatedJobTitle = () => {
   }, []);
   
   const icons = [
-    <Terminal key="terminal" className="h-4 w-4 inline mr-1" />,
+    <Sparkles key="sparkles" className="h-4 w-4 inline mr-1" />,
     <Cloud key="cloud" className="h-4 w-4 inline mr-1" />,
     <Code key="code" className="h-4 w-4 inline mr-1" />
   ];
@@ -86,7 +86,7 @@ export default function HeroSection() {
           <AnimatedTitle />
           
           <p className="text-lg md:text-xl text-gray-700 dark:text-gray-300 max-w-2xl leading-relaxed">
-            MS CS student at ASU with <span className="text-primary font-medium">AWS and HashiCorp certifications</span>. Passionate about cloud computing, AI/ML, and building scalable applications with innovative technologies.
+            <span className="text-primary font-medium">Software Engineer in GenAI at Allstate</span> with MS in Computer Science from ASU. AWS and HashiCorp certified professional passionate about cloud computing, AI/ML, and building innovative solutions.
           </p>
           
           <div className="flex flex-wrap gap-4">
@@ -121,13 +121,15 @@ export default function HeroSection() {
               <FaLinkedin className="h-6 w-6" />
             </a>
             <a 
-              href="#" 
+              href="https://github.com/Sai-Krishna7" 
+              target="_blank" 
+              rel="noopener noreferrer"
               className="hover:text-primary dark:hover:text-primary-400 transition-colors"
             >
               <FaGithub className="h-6 w-6" />
             </a>
             <a 
-              href="#" 
+              href="#skills"
               className="hover:text-primary dark:hover:text-primary-400 transition-colors"
             >
               <FaAws className="h-6 w-6" />

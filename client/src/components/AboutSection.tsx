@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import { ArrowRight, Award, BookOpen, CheckCircle2 } from 'lucide-react';
+import { ArrowRight, Award, BookOpen, CheckCircle2, Briefcase } from 'lucide-react';
 import FadeInElement from './FadeInElement';
 import WorkspaceSVG from '@/assets/WorkspaceSVG';
 import { portfolioData } from '@/data/portfolioData';
@@ -8,7 +8,7 @@ export default function AboutSection() {
   return (
     <section id="about" className="py-20 lg:py-32 relative overflow-hidden">
       {/* Animated gradient background */}
-      <div className="absolute inset-0 bg-gradient-to-tr from-blue-50/30 to-purple-50/10 dark:from-blue-900/5 dark:to-purple-900/5 -z-10"></div>
+      <div className="absolute inset-0 bg-gradient-to-tr from-blue-50/30 to-purple-50/10 dark:from-blue-900/5 dark:to-purple-900/5 -z-10 animate-gradient-slow"></div>
       
       <div className="container mx-auto px-6">
         <div className="flex flex-col md:flex-row gap-12 items-center">
@@ -50,20 +50,33 @@ export default function AboutSection() {
               <div>
                 <p className="text-primary dark:text-primary-400 font-medium">About Me</p>
                 <h2 className="text-3xl md:text-4xl font-bold mt-2 mb-6 gradient-underline inline-block">
-                  Software Engineer & Cloud Enthusiast
+                  GenAI Software Engineer
                 </h2>
               </div>
               
               <p className="text-gray-600 dark:text-gray-300 leading-relaxed">
-                I'm currently pursuing my <span className="font-medium">Master's in Computer Science at Arizona State University</span>, with a focus on Cloud Computing and Artificial Intelligence. My passion for mathematics and programming stems from the countless ways these disciplines help implement logic and solve real-world problems.
+                I'm a <span className="font-medium">Software Engineer in GenAI at Allstate</span>, building innovative AI-powered solutions. I completed my <span className="font-medium">Master's in Computer Science at Arizona State University</span>, specializing in Cloud Computing and Artificial Intelligence.
               </p>
               
               <p className="text-gray-600 dark:text-gray-300 leading-relaxed">
-                My professional journey at <span className="font-medium">Allstate</span> has given me valuable experience in software development, cloud engineering, and AI-driven solutions. I hold certifications from AWS and HashiCorp, reflecting my dedication to continuous learning in cloud technologies.
+                My professional work focuses on developing AI features that help analysts identify root causes and solutions faster from historical incident data. I'm passionate about building scalable systems and optimizing API performance, particularly in cloud environments and AI-driven technologies.
               </p>
               
-              {/* Certifications section */}
+              {/* Current Role section */}
               <div className="pt-2">
+                <h3 className="text-lg font-medium mb-2 flex items-center gap-2">
+                  <Briefcase className="h-5 w-5 text-primary dark:text-primary-400" />
+                  Current Role
+                </h3>
+                <div className="bg-gradient-to-r from-primary-50 to-blue-50 dark:from-primary-900/20 dark:to-blue-900/20 p-4 rounded-lg">
+                  <p className="text-gray-700 dark:text-gray-300">
+                    As a <span className="font-medium">GenAI Software Engineer</span> at Allstate, I've developed GPT-4o-powered summarization layers, improved API query accuracy by 60%, and optimized vector search pipelines to accelerate analyst workflows by 35%.
+                  </p>
+                </div>
+              </div>
+              
+              {/* Certifications section */}
+              <div className="pt-4">
                 <h3 className="text-lg font-medium mb-2 flex items-center gap-2">
                   <Award className="h-5 w-5 text-primary dark:text-primary-400" />
                   Certifications
@@ -79,10 +92,10 @@ export default function AboutSection() {
               </div>
               
               {/* Stats section */}
-              <div className="grid grid-cols-2 gap-4 mt-8">
+              <div className="grid grid-cols-2 gap-4 mt-6">
                 <div className="bg-white dark:bg-gray-800 p-4 rounded-lg shadow-md">
                   <div className="text-primary dark:text-primary-400 text-2xl font-bold animate-counting">4+</div>
-                  <div className="text-gray-600 dark:text-gray-300 text-sm">Years Academic Experience</div>
+                  <div className="text-gray-600 dark:text-gray-300 text-sm">Years Tech Experience</div>
                 </div>
                 <div className="bg-white dark:bg-gray-800 p-4 rounded-lg shadow-md">
                   <div className="text-primary dark:text-primary-400 text-2xl font-bold animate-counting">10+</div>
