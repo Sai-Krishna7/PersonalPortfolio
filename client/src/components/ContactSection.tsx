@@ -77,7 +77,7 @@ export default function ContactSection() {
                   </div>
                   <div>
                     <h3 className="font-medium text-white/90">Email</h3>
-                    <p className="text-white/80 text-sm">saideeddv@example.com</p>
+                    <p className="text-white/80 text-sm">saideeduvanu@gmail.com</p>
                   </div>
                 </div>
                 
@@ -87,7 +87,7 @@ export default function ContactSection() {
                   </div>
                   <div>
                     <h3 className="font-medium text-white/90">Location</h3>
-                    <p className="text-white/80 text-sm">Hyderabad, India</p>
+                    <p className="text-white/80 text-sm">Tempe, AZ</p>
                   </div>
                 </div>
                 

@@ -6,7 +6,7 @@ import FadeInElement from './FadeInElement';
 import TechPatternSVG from '@/assets/TechPatternSVG';
 import { useEffect, useState } from 'react';
 // Import the professional headshot
-import SaiHeadshot from '@/assets/images/Sai Deeduvanu.png';
+import headshot from '../assets/images/Sai Deeduvanu.png';
 
 // Dynamic animated text with gradient
 const AnimatedTitle = () => {
@@ -143,7 +143,7 @@ export default function HeroSection() {
             {/* Animated glow effect */}
             <div className="absolute inset-0 rounded-full bg-gradient-to-tr from-primary-400 via-purple-500 to-secondary-500 blur-2xl opacity-20 scale-110 dark:opacity-30 animate-glow"></div>
             <img 
-              src={SaiHeadshot} 
+              src={headshot} 
               alt="Sai Deeduvanu" 
               className="relative z-10 w-64 h-64 md:w-80 md:h-80 object-cover rounded-full border-4 border-white dark:border-gray-800 shadow-xl" 
             />
