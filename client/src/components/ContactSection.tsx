@@ -59,9 +59,7 @@ export default function ContactSection() {
 
   return (
     <SectionWrapper id="contact" className="relative overflow-hidden">
-      <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-br from-primary-50/30 via-transparent to-secondary-50/20 dark:from-primary-900/10 dark:to-secondary-900/10 -z-10"></div>
-      {/* Light background overlay for better visibility in light mode */}
-      <div className="absolute top-0 left-0 w-full h-full bg-white/50 dark:bg-transparent -z-10"></div>
+      <div className="absolute top-0 left-0 w-full h-full bg-gray-100 dark:bg-gray-900/90 -z-10"></div>
       
       <div className="max-w-5xl mx-auto bg-white dark:bg-gray-800 rounded-xl shadow-xl overflow-hidden">
         <div className="md:grid md:grid-cols-5">
