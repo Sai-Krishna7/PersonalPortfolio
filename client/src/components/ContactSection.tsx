@@ -59,7 +59,18 @@ export default function ContactSection() {
 
   return (
     <SectionWrapper id="contact" className="relative overflow-hidden">
-      <div className="absolute top-0 left-0 w-full h-full bg-gray-100 dark:bg-gray-900/90 -z-10"></div>
+      {/* Updated background to ensure content is visible in both light and dark modes */}
+      <div className="absolute top-0 left-0 w-full h-full bg-white dark:bg-gray-900 -z-10"></div>
+      
+      <div className="section-container text-center mb-12">
+        <FadeInElement>
+          <p className="text-primary dark:text-primary-400 font-medium">Contact Me</p>
+          <h2 className="text-3xl md:text-4xl font-bold mt-2 text-gray-900 dark:text-white">Get In Touch</h2>
+          <p className="text-gray-700 dark:text-gray-300 mt-4 max-w-2xl mx-auto">
+            Have a project in mind or want to discuss potential opportunities? Feel free to reach out using the form below or through my contact information.
+          </p>
+        </FadeInElement>
+      </div>
       
       <div className="max-w-5xl mx-auto bg-white dark:bg-gray-800 rounded-xl shadow-xl overflow-hidden">
         <div className="md:grid md:grid-cols-5">

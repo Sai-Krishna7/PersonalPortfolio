@@ -33,7 +33,7 @@ export default function ProjectCard({ project, className }: ProjectCardProps) {
     >
       {/* SVG abstract tech background for project */}
       <div 
-        className="w-full h-48 overflow-hidden bg-gray-200 dark:bg-gray-700"
+        className="w-full h-48 overflow-hidden bg-gray-200 dark:bg-gray-700 flex items-center justify-center"
         style={{ 
           backgroundImage: `url(${project.image})`,
           backgroundSize: 'cover',
