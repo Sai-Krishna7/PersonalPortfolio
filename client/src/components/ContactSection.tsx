@@ -74,41 +74,42 @@ export default function ContactSection() {
       
       <div className="max-w-5xl mx-auto bg-white dark:bg-gray-800 rounded-xl shadow-xl overflow-hidden">
         <div className="md:grid md:grid-cols-5">
-          <div className="p-8 md:p-12 md:col-span-2 bg-gradient-to-br from-primary-600 to-primary-800 text-white">
-            <FadeInElement>
-              <h2 className="text-2xl font-bold mb-6">Get In Touch</h2>
-              <p className="mb-8">
+          {/* <div className="p-8 md:p-12 md:col-span-2 bg-primary dark:bg-primary-800 text-gray-900 dark:text-white"> */}
+          <div className="p-8 md:p-12 md:col-span-2">
+            <FadeInElement delay={0.2}>
+              <h2 className="text-2xl font-bold mb-6 text-gray-900 dark:text-white">Get In Touch</h2>
+              <p className="mb-8 text-gray-700 dark:text-gray-200">
                 Feel free to contact me for work opportunities or if you have any questions.
               </p>
               
               <div className="space-y-4">
                 <div className="flex items-start">
-                  <div className="w-10 h-10 rounded-full bg-white/20 flex items-center justify-center mr-4 shrink-0">
-                    <RectangleEllipsis className="h-5 w-5 text-white" />
+                  <div className="w-10 h-10 rounded-full bg-gray-200 dark:bg-gray-700 flex items-center justify-center mr-4 shrink-0">
+                    <RectangleEllipsis className="h-5 w-5 text-gray-700 dark:text-gray-200" />
                   </div>
                   <div>
-                    <h3 className="font-medium text-white/90">Email</h3>
-                    <p className="text-white/80 text-sm">saideeduvanu@gmail.com</p>
+                    <h3 className="font-medium text-gray-900 dark:text-white">Email</h3>
+                    <p className="text-gray-700 dark:text-gray-200 text-sm">saideeduvanu@gmail.com</p>
                   </div>
                 </div>
                 
                 <div className="flex items-start">
-                  <div className="w-10 h-10 rounded-full bg-white/20 flex items-center justify-center mr-4 shrink-0">
-                    <MapPin className="h-5 w-5 text-white" />
+                  <div className="w-10 h-10 rounded-full bg-gray-200 dark:bg-gray-700 flex items-center justify-center mr-4 shrink-0">
+                    <MapPin className="h-5 w-5 text-gray-700 dark:text-gray-200" />
                   </div>
                   <div>
-                    <h3 className="font-medium text-white/90">Location</h3>
-                    <p className="text-white/80 text-sm">Tempe, AZ</p>
+                    <h3 className="font-medium text-gray-900 dark:text-white">Location</h3>
+                    <p className="text-gray-700 dark:text-gray-200 text-sm">Tempe, AZ</p>
                   </div>
                 </div>
                 
                 <div className="flex items-start">
-                  <div className="w-10 h-10 rounded-full bg-white/20 flex items-center justify-center mr-4 shrink-0">
-                    <FaLinkedin className="h-5 w-5 text-white" />
+                  <div className="w-10 h-10 rounded-full bg-gray-200 dark:bg-gray-700 flex items-center justify-center mr-4 shrink-0">
+                    <FaLinkedin className="h-5 w-5 text-gray-700 dark:text-gray-200" />
                   </div>
                   <div>
-                    <h3 className="font-medium text-white/90">LinkedIn</h3>
-                    <a href="https://www.linkedin.com/in/sai-deeduvanu-6108b21b8/" target="_blank" rel="noopener noreferrer" className="text-white/80 text-sm hover:text-white">
+                    <h3 className="font-medium text-gray-900 dark:text-white">LinkedIn</h3>
+                    <a href="https://www.linkedin.com/in/sai-deeduvanu-6108b21b8/" target="_blank" rel="noopener noreferrer" className="text-gray-700 dark:text-gray-200 text-sm hover:text-primary dark:hover:text-primary-400">
                       linkedin.com/in/sai-deeduvanu
                     </a>
                   </div>
@@ -116,16 +117,16 @@ export default function ContactSection() {
               </div>
               
               <div className="mt-8">
-                <h3 className="font-medium mb-4">Follow me</h3>
+                <h3 className="font-medium mb-4 text-gray-900 dark:text-white">Follow me</h3>
                 <div className="flex space-x-3">
-                  <a href="#" className="w-10 h-10 rounded-full bg-white/20 flex items-center justify-center hover:bg-white/30 transition-colors">
-                    <FaGithub className="h-5 w-5 text-white" />
+                  <a href="#" className="w-10 h-10 rounded-full bg-gray-200 dark:bg-gray-700 flex items-center justify-center hover:bg-gray-300 dark:hover:bg-gray-600 transition-colors">
+                    <FaGithub className="h-5 w-5 text-gray-700 dark:text-gray-200" />
                   </a>
-                  <a href="#" className="w-10 h-10 rounded-full bg-white/20 flex items-center justify-center hover:bg-white/30 transition-colors">
-                    <FaTwitter className="h-5 w-5 text-white" />
+                  <a href="#" className="w-10 h-10 rounded-full bg-gray-200 dark:bg-gray-700 flex items-center justify-center hover:bg-gray-300 dark:hover:bg-gray-600 transition-colors">
+                    <FaTwitter className="h-5 w-5 text-gray-700 dark:text-gray-200" />
                   </a>
-                  <a href="#" className="w-10 h-10 rounded-full bg-white/20 flex items-center justify-center hover:bg-white/30 transition-colors">
-                    <FaInstagram className="h-5 w-5 text-white" />
+                  <a href="#" className="w-10 h-10 rounded-full bg-gray-200 dark:bg-gray-700 flex items-center justify-center hover:bg-gray-300 dark:hover:bg-gray-600 transition-colors">
+                    <FaInstagram className="h-5 w-5 text-gray-700 dark:text-gray-200" />
                   </a>
                 </div>
               </div>
